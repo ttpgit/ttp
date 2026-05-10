@@ -263,6 +263,42 @@ h2 {
     gap: 1rem;
 }
 
+.coin-icon-wrap {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.coin-btc { background: #F7931A; }
+.coin-ltc { background: #345D9D; }
+
+.coin-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.coin-name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.coin-network {
+  font-size: 11px;
+  opacity: 0.55;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.addr-label {
+  font-size: 11px;
+  opacity: 0.5;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 4px;
+}
+
 code {
     font-family: 'DM Mono', monospace;
     font-size: 0.8rem;
