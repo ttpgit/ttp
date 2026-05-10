@@ -368,6 +368,60 @@ footer {
     margin: 0 auto;
 }
 
+/* ── Community Bar ── */
+.community-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 0 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 2rem;
+}
+
+.footer-community {
+    border-bottom: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+.community-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.04);
+    transition: all 0.2s ease;
+}
+
+.community-link:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-1px);
+}
+
+.community-link.discord:hover  { border-color: #5865F2; color: #5865F2; background: rgba(88, 101, 242, 0.08); }
+.community-link.youtube:hover  { border-color: #FF0000; color: #FF0000; background: rgba(255, 0, 0, 0.08); }
+.community-link.github:hover   { border-color: rgba(255,255,255,0.5); color: #fff; background: rgba(255,255,255,0.08); }
+
+@media (max-width: 480px) {
+    .community-link span { display: none; }
+    .community-link { padding: 10px; }
+    .community-bar { gap: 8px; }
+}
+
 @media (max-width: 600px) {
     .gap-value { font-size: 2.5rem; }
     .wallet-body { flex-direction: column; align-items: flex-start; }
